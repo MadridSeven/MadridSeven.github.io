@@ -10,14 +10,14 @@ tag: JAVA源码解析
 
 ----------
 
-##一、String类
+## 一、String类
 &emsp;&emsp;String 类代表字符串。Java 程序中的所有字符串字面值（如 "abc" ）都作为此类的实例来实现的。首先String类是被final所修饰的，所以不允许被继承和修改，String类实现了Serializable、Comparable、CharSequence这三个接口，Serializable接口使得String可序列化；Comparable为String提供了比较器，使其可进行排序；CharSequence接口有length()，charAt(int index)，subSequence(int start,int end)方法。
 
 ```java
 public final class String
     implements java.io.Serializable, Comparable<String>, CharSequence
 ```
-##二、String属性
+## 二、String属性
 &emsp;&emsp;String声明了4个变量如下图：
 ![这里写图片描述](http://img.blog.csdn.net/20170306221038410?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWFkcmlkQmFp/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 &emsp;&emsp;String类中包含一个不可变的char数组用来存放字符串（在Java中String类其实就是对字符数组的封装），一个int型的变量hash用来存放计算后的哈希值。serialVersionUID变量提供序列化的ID，serialPersistentFields变量声明了一个可序列化的字段。
@@ -34,7 +34,7 @@ public final class String
     private static final ObjectStreamField[] serialPersistentFields =
         new ObjectStreamField[0];
 ```
-##三、String构造方法
+## 三、String构造方法
 &emsp;&emsp;String类型共有五个常用的构造器，其代码如下。
 
 ```java
@@ -119,7 +119,7 @@ public final class String
         this.value = v;
     }
 ```
-##四、String常用方法
+## 四、String常用方法
 &emsp;&emsp;String类提供了许多对字符串进行操作的方法，很多方法都在平时的开发中经常使用，我们一起来看看一些常用的方法是如何实现的。
 
 &emsp;&emsp;getChars方法是将一个String字符串，按照给定的参数复制到目标字符数组的方法。其中传入4个参数：int类型的srcBegin为字符串中要复制的第一个字符的索引；int类型的srcEnd为字符串中要复制的最后一个字符之后的索引（要复制的最后一个字符位于索引 srcEnd-1 处）；char类型的数组dst[]为目标数组；int类型的desBegin为目标数组中的起始偏移量。
@@ -253,12 +253,12 @@ public String trim() {
     }
 ```
 
-<font color=green>注：我挑了一些常用的方法展现出来，有些方法没有一一列举大家可以自行查看jdk1.7的源码即可。</font>
+<font color="green">注：我挑了一些常用的方法展现出来，有些方法没有一一列举大家可以自行查看jdk1.7的源码即可。</font>
 
 
 ----------
 
 
-<font color=blue>笔者水平有限，若有错漏，欢迎指正，如果转载以及CV操作，请务必注明出处，谢谢！</font>
+<font color="blue">笔者水平有限，若有错漏，欢迎指正，如果转载以及CV操作，请务必注明出处，谢谢！</font>
 
-<font color=red>版权声明：本文为博主原创文章，未经博主允许不得转载。</font>
+<font color="red">版权声明：本文为博主原创文章，未经博主允许不得转载。</font>

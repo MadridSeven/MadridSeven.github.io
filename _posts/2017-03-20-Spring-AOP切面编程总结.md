@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Spring-AOP切面编程总结"
 date: 2017-03-20 
@@ -17,29 +17,29 @@ tag: 框架
 
 &emsp;&emsp;AOP是面向切面编程(Aspect-Oriented Programming)的缩写，是对传统的面向对象编程的一种补充，下面来介绍下在AOP中经常用到的一些术语。
 
- - <font color="red">切面(Aspect):横切关注点(跨越应用程序多个模块的功能)被模块化的特殊对象</font>
+> - <font color="red">切面(Aspect):横切关注点(跨越应用程序多个模块的功能)被模块化的特殊对象</font>
  
- - <font color="red">通知(Advice):切面必须要完成的工作</font>
+ >- <font color="red">通知(Advice):切面必须要完成的工作</font>
  
- - <font color="red">目标(Target):被通知的对象</font>
+ >- <font color="red">目标(Target):被通知的对象</font>
  
- - <font color="red">代理(Proxy): 向目标对象应用通知之后创建的对象</font>
+ >- <font color="red">代理(Proxy): 向目标对象应用通知之后创建的对象</font>
  
- - <font color="red">连接点（Joinpoint）：程序执行的某个特定位置：如类某个方法调用前、调用后、方法抛出异常后等。</font>
+ >- <font color="red">连接点（Joinpoint）：程序执行的某个特定位置：如类某个方法调用前、调用后、方法抛出异常后等。</font>
  
- - <font color="red">切点(pointcut):  **一个类中可以有多个连接点**  ,就和每个类中可以有多个方法一样，AOP通过切点定位到特定的连接点。  **可以这么理解**  ：连接点相当于数据库中的记录，切点则相当于查询条件，切点使用类和方法作为连接点的查询条件。</font>
+ >- <font color="red">切点(pointcut):  一个类中可以有多个连接点  ,就和每个类中可以有多个方法一样，AOP通过切点定位到特定的连接点。  可以这么理解  ：连接点相当于数据库中的记录，切点则相当于查询条件，切点使用类和方法作为连接点的查询条件。</font>
  
 &emsp;&emsp;AOP切面编程是围绕着通知注解这个东西展开的，在SpringAOP中共有五种类型的通知注解：
 
--   @Before: 前置通知，在方法执行之前执行
+>-   @Before: 前置通知，在方法执行之前执行
 
-- @After: 后置通知，在方法执行之后执行
+>- @After: 后置通知，在方法执行之后执行
 
-- @AfterRunning:返回通知，在方法返回结果之后执行
+>- @AfterRunning:返回通知，在方法返回结果之后执行
 
-- @AfterThrowing:异常通知，在方法抛出异常之后
+>- @AfterThrowing:异常通知，在方法抛出异常之后
 
-- @Around:环绕通知，围绕着方法执行  （并不常用）
+>- @Around:环绕通知，围绕着方法执行  （并不常用）
 
 
 
@@ -298,7 +298,7 @@ public class LoggingAspect {
 <font color="blue">笔者水平有限，若有错漏，欢迎指正，如果转载以及CV操作，请务必注明出处，谢谢！</font>
 
 
-
+----------
 
 
 <font color="red">版权声明：本文为博主原创文章，未经博主允许不得转载。</font>

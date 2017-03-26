@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "JAVA源码解析-String源码"
 date: 2017-03-07 
@@ -265,8 +265,7 @@ public String trim() {
 <font color="blue">笔者水平有限，若有错漏，欢迎指正，如果转载以及CV操作，请务必注明出处，谢谢！</font>
 
 
-
-
+----------
 
 
 <font color="red">版权声明：本文为博主原创文章，未经博主允许不得转载。</font>

@@ -19,8 +19,11 @@ public final class String
 ```
 ## 二、String属性
 &emsp;&emsp;String声明了4个变量如下图：
+
 ![这里写图片描述](http://img.blog.csdn.net/20170306221038410?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWFkcmlkQmFp/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 &emsp;&emsp;String类中包含一个不可变的char数组用来存放字符串（在Java中String类其实就是对字符数组的封装），一个int型的变量hash用来存放计算后的哈希值。serialVersionUID变量提供序列化的ID，serialPersistentFields变量声明了一个可序列化的字段。
+
 
 ```java
 	private final char value[];
@@ -260,5 +263,10 @@ public String trim() {
 
 
 <font color="blue">笔者水平有限，若有错漏，欢迎指正，如果转载以及CV操作，请务必注明出处，谢谢！</font>
+
+
+
+
+
 
 <font color="red">版权声明：本文为博主原创文章，未经博主允许不得转载。</font>

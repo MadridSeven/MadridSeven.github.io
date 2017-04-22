@@ -457,7 +457,7 @@ public class ArrayList<E> extends AbstractList<E>
 
 &emsp;&emsp;关于 ArrayList 的源码和使用，给出几点比较重要的总结：
 
-&emsp;&emsp;注意扩充容量的方法ensureCapacity。ArrayList在每次增加元素（可能是1个，也可能是一组）时，都要调用该方法来确保足够的容量。当容量不足以容纳当前的元素个数时，就设置新的容量为旧的容量的1.5倍，如果设置后的新容量还不够，则直接新容量设置为传入的参数（也就是所需的容量），而后用Arrays.copyof()方法将元素拷贝到新的数组（详见下面的第3点）。从中可以看出，当容量不够时，每次增加元素，都要将原来的元素拷贝到一个新的数组中，非常之耗时，<font color=red>也因此建议在事先能确定元素数量的情况下，才使用ArrayList，否则建议使用LinkedList。</font>
+&emsp;&emsp;注意扩充容量的方法ensureCapacity。ArrayList在每次增加元素（可能是1个，也可能是一组）时，都要调用该方法来确保足够的容量。当容量不足以容纳当前的元素个数时，就设置新的容量为旧的容量的1.5倍，如果设置后的新容量还不够，则直接新容量设置为传入的参数（也就是所需的容量），而后用Arrays.copyof()方法将元素拷贝到新的数组（详见下面的第3点）。从中可以看出，当容量不够时，每次增加元素，都要将原来的元素拷贝到一个新的数组中，非常之耗时，<font color="red">也因此建议在事先能确定元素数量的情况下，才使用ArrayList，否则建议使用LinkedList。</font>
 
 &emsp;&emsp;ArrayList的实现中大量地调用了Arrays.copyof()和System.arraycopy()方法。我们有必要对这两个方法的实现做下深入的了解。</br>
 &emsp;&emsp;先来看Arrays.copyof()。它有很多个重载的方法，但实现思路都是一样的，我们来看泛型版本的源码：

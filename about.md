@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 关于我 
+title: 关于我
 ---
 
-一个Java菜鸟，一个足球狗，一个异地恋受害者
+一个Java菜鸟，一个足球狗.
 <p>
 平时喜欢整理个人博客，逛逛技术论坛。
 <p>
@@ -18,8 +18,7 @@ title: 关于我
 <p>
 
 希望大家多多关注我的github，你们的star是我的动力。
+<p>
+联系邮箱：madridseven7@163.com
 
 {% include comments.html %}
-
-
-

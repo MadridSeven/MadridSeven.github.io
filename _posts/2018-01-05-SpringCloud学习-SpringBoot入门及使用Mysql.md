@@ -14,6 +14,9 @@ tag: JAVA进阶学习
 &emsp;&emsp;Spring Boot可以说是至少近5年来Spring乃至整个Java社区最有影响力
 的项目之一，也被人看作是：Java EE开发的颠覆者。
 
+&emsp;&emsp;
+
+
 ### SpringBoot的优点
 
 - 去除了之前Spring项目的大量的xml配置文件
@@ -23,7 +26,7 @@ tag: JAVA进阶学习
 - 嵌入式Tomcat，Jetty容器，配合Maven或Gradle等构件工具打成Jar包后，Java -jar 进行部署运行还是蛮简单的
 
 
-
+&emsp;&emsp;
 
 ## 入门HelloWorld
 
@@ -98,6 +101,8 @@ server:
 
 &emsp;&emsp;该实例的代码发布在我的github中，链接：https://github.com/MadridSeven/learning-spring-boot/tree/master/spring-boot-hello
 
+&emsp;&emsp;
+
 ## SpringBoot 使用Mysql
 
 &emsp;&emsp;
@@ -117,6 +122,9 @@ server:
 ```
 
 &emsp;&emsp;其余的配置与上一个基础应用一样。
+
+&emsp;&emsp;
+
 
 ### 实体建模
 
@@ -196,6 +204,8 @@ public class Role implements Serializable{
 }
 ```
 
+&emsp;&emsp;
+
 ### 实体持久化
 
 &emsp;&emsp;通过建立上面的三个实体类，我们已经实现了使用 Java 的普通对象(POJO)
@@ -223,6 +233,8 @@ PagingAndSortingRepository 继承于 CrudRepository，它提供了简单的增�
 
 &emsp;&emsp;JPA 还提供了一些自定义生命方法的规则，例如，在接口中使用关键字 findBy、readBy、getBy作为方法名的
 前缀，拼接实体类中的属性字段，并可选择凭借一些SQL查询关键字来组成一个查询方法。
+
+&emsp;&emsp;
 
 ### Mysql 测试
 

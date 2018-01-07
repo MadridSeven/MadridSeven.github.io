@@ -9,6 +9,8 @@ tag: JAVA进阶学习
 
 ## 为什么要使用SpringBoot
 
+&emsp;&emsp;
+
 &emsp;&emsp;Spring Boot可以说是至少近5年来Spring乃至整个Java社区最有影响力
 的项目之一，也被人看作是：Java EE开发的颠覆者。
 
@@ -20,7 +22,12 @@ tag: JAVA进阶学习
 - 快速启动容器
 - 嵌入式Tomcat，Jetty容器，配合Maven或Gradle等构件工具打成Jar包后，Java -jar 进行部署运行还是蛮简单的
 
+
+
+
 ## 入门HelloWorld
+
+&emsp;&emsp;
 
 &emsp;&emsp;要使用 SpringBoot 框架，先要安装 git 和 maven，
 这两个工具的安装过程就不赘述了，网上很多；另外本文所使用的 ide 是 IntelliJ IDEA;使用的jdk版本为1.8。
@@ -92,6 +99,8 @@ server:
 &emsp;&emsp;该实例的代码发布在我的github中，链接：https://github.com/MadridSeven/learning-spring-boot/tree/master/spring-boot-hello
 
 ## SpringBoot 使用Mysql
+
+&emsp;&emsp;
 
 &emsp;&emsp; 为了使用 JPA 和 Mysql，首先在工程中引入它们的 Maven 依赖，代码如下：
 

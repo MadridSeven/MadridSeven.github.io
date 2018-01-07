@@ -12,8 +12,6 @@ tag: JAVA进阶学习
 &emsp;&emsp;Spring Boot可以说是至少近5年来Spring乃至整个Java社区最有影响力
 的项目之一，也被人看作是：Java EE开发的颠覆者。
 
-&emsp;&emsp;
-
 
 ### SpringBoot的优点
 

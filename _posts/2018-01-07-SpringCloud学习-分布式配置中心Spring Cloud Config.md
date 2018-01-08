@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SpringCloud学习-分布式配置中心Spring Cloud Config"
+title: "SpringCloud学习-分布式配置中心Spring Cloud Config(一)"
 date: 2018-01-07
 description: "Spring，SpringBoot，SpringCloud"
 tag: JAVA进阶学习

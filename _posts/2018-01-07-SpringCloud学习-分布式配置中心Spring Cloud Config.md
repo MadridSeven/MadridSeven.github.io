@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SpringCloud学习-分布式配置中心Spring Cloud Config(一)"
+title: "SpringCloud学习-分布式配置中心Spring Cloud Config(一)-基础"
 date: 2018-01-07
 description: "Spring，SpringBoot，SpringCloud"
 tag: JAVA进阶学习
@@ -17,7 +17,7 @@ tag: JAVA进阶学习
 &emsp;&emsp;其次来看看它的特点：
 
 - 分为客户端和服务端两部分。
-- 服务端也成为分布式配置中心，用来连接配置仓库并为客户端提供获取配置信息、加密/解密信息等访问接口。
+- 服务端也称为分布式配置中心，用来连接配置仓库并为客户端提供获取配置信息、加密/解密信息等访问接口。
 - 客户端则是微服务架构中的各个微服务应用，它们通过指定的配置中心来管理应用的配置内容。
 - 默认采用 Git 来存储配置信息。
 

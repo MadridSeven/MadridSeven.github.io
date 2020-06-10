@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Redis-接口的幂等性之Redis解决方案"
-date: 2019-07-15
+date: 2019-08-15
 description: "Redis，分布式锁"
 tag: JAVA进阶学习
 

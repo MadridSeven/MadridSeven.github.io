@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "JAVA源码解析-String源码"
-date: 2017-03-07 
+date: 2019-04-01
 description: "JAVA，String源码"
 tag: JAVA源码解析
- 
+
 ---
-&emsp;&emsp;开学已经一周了，刚开学也是忙的不亦乐乎，总想开个好头嘛。眼看这就大三下学期了，表示压力山大啊，感觉再过上个不到半年我就成个社会人了，想着都怕。今天在知乎上闲逛，发现有初学者问关于String的问题，看了些解答之后突然很想看看String的源码，毕竟String类在平时的开发中用的相当相当多，所以就开始写这一专题《JAVA源码解析》，在String之后还会和大家一起阅读JAVA集合类的源码。当然这并不表示我的《JAVA基础进阶》就不写了，以后还会继续更新。←（开篇得有一段废话这是惯例）
 
 
 ----------
@@ -98,7 +97,7 @@ public final class String
 
         final int end = offset + count;
 
-        
+
         int n = count;
         for (int i = offset; i < end; i++) {
             int c = codePoints[i];
@@ -109,7 +108,7 @@ public final class String
             else throw new IllegalArgumentException(Integer.toString(c));
         }
 
-        
+
         final char[] v = new char[n];
 
         for (int i = offset, j = 0; i < end; i++, j++) {
